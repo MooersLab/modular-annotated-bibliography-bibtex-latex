@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage[acronym]{glossaries}
+\newglossary[nlg]{notation}{not}{ntn}{Notation}
+
+\makeglossaries
+\setacronymstyle{long-short}
+\loadglsentries{acronyms}
+\loadglsentries{glossary}
+\loadglsentries{notation}
+
+\begin{document}
+
+\printglossary[type=\acronymtype] % Print the acronym list
+
+\newpage{}
+
+This is an example of math notation $\gls{not:set}$.
+
+\clearpage
+\glsaddall[types={notation}] % add all entries, not just those used.
+\printglossary[type=notation, title=Mathematical Notation]
+
+
+\section*{Crystallography}
+This document includes mathematical notations relevant to protein crystallography such as $\gls{not:electron_density}$, $\gls{not:structure_factor}$, and $\gls{not:fourier_transform}$.
+
+
+% Use glossary entries
+The \gls{adaptive design} typesetting system is widely used in \gls{adaptive design} documents.
+
+% Use acronyms
+First use: \gls{svm}.\\
+Second use: \gls{svm}.\\
+Another acronym: \gls{ga}.
+Another math term \gls{not:phase_shift}.
+
+% Print the glossaries
+\clearpage
+\printglossary % Print the main glossary
+
+
+\end{document}

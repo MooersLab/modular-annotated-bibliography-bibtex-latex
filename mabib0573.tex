@@ -1,0 +1,122 @@
+\documentclass{article}
+\usepackage[letterpaper, total={6.75in, 9in}]{geometry} % good with line numbers
+%\usepackage[top=0.5in,bottom=0.5in,left=0.5in,right=0.5in]{geometry} % Reduce the size of the margin to save paper
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{xurl} % permit line breaks in urls
+\usepackage[luatex,plainpages=false]{hyperref}
+\usepackage{lineno}
+\usepackage{datetime2}
+\usepackage{breakcites} % allow citatation to wrap
+\usepackage{makeidx}         % allows index generation
+\usepackage[utf8]{inputenc}
+%\usepackage{setspace} \doublespacing
+%\doublespacing % turn on doublespacing for the whole document.
+\usepackage{parskip} % add a blank line between paragraphs upon export to PDF.
+\usepackage[T1]{fontenc}
+\usepackage{authblk}
+\usepackage[labelfont=bf]{caption}
+\DeclareCaptionType{equ}[][] % provide equ environment to add captions to equations
+\usepackage[bottom]{footmisc}% places footnotes at page bottom
+\usepackage{amsfonts, mathtools, amssymb, amssymb} % For math fonts, symbols and environments
+\usepackage{booktabs} % Needed for fancy tables
+\usepackage{threeparttable}
+\usepackage{graphicx}
+\usepackage{wrapfig} % Allows in-line images
+\usepackage[labelfont=bf]{caption} % Make figure numbering in captions bold
+% \usepackage{minted} invoke -shell-escape flag
+%Print page numbers in the upper right corner rather than the bottom center.
+\pagestyle{myheadings}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyhead[L]{\today}
+\fancyhead[C]{0573 Crystal detection} % Center header
+\fancyhead[R]{\thepage\ / \pageref{LastPage}} 
+
+% Three glossaries, the order matters here
+\usepackage[acronym]{glossaries}
+\newglossary[nlg]{notation}{not}{ntn}{Notation}
+\makeglossaries
+\setacronymstyle{long-short}
+\loadglsentries{~/glossaries/acronyms}
+\loadglsentries{~/glossaries/glossary}
+\loadglsentries{~/glossaries/notation}
+
+%backmatter
+\bibliographystyle{cell}
+\makeindex
+% The following command produces a single column author index.
+\RequirePackage{authorindex}
+% Use this, if you want hyperlinks back from list of author entry to page
+% where the citation was placed
+\def\theaipage{\string\hyperpage{\thepage}} 
+\newcommand{\listofauthorsname}{List of Authors}%
+\newcommand{\listofauthors}% {%\section*{\listofauthorsname}%
+% %\begin{multicols*}{2}
+% \phantomsection%
+% \addcontentsline{toc}{chapter}{\listofauthorsname}%
+% \noindent%
+\printauthorindex%
+% Set the depth of the table of contents
+\setcounter{tocdepth}{2} % 1 for sections, 2 for subsections, 3 for subsubsections, etc.
+
+% Rename Reference section
+\renewcommand{\refname}{Literature Cite}
+
+% Create a code float environment to enclosed minted environments so that captions can be added to code listings.
+\newenvironment{code}{\captionsetup{type=listing}}{}
+% Approximate Arial font. To save ink by returning to a sans serif font, comment the next two lines.
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\modulolinenumbers[1]
+\setlength{\parindent}{0pt} % Remove automatic indent of paragraphs.
+
+
+\author[1]{Graduate Student}
+\author[2]{Senior Collaborator}
+\author[3]{Staff Scientist}
+\author[1,2,3]{Blaine Mooers\thanks{blaine-mooers at ouhsc.edu, phone: 405-271-8XXX, FAX: 405-271-3X3X}}
+\affil[1]{Department of Biochemistry and Molecular Biology, University of Oklahoma Health Sciences Center, Oklahoma City, Oklahoma, United States 73104}
+\affil[2]{Stephenson Cancer Center, University of Oklahoma Health Sciences Center, Oklahoma City, Oklahoma, United States 73104}
+\affil[3]{Laboratory of Biomolecular Structure and Function, University of Oklahoma Health Sciences Center, Oklahoma City, Oklahoma, United States 73104}
+
+
+\title{An\gls{annotated bibliography}: Molecular graphics}
+
+\usepackage{bibentry}
+\nobibliography*
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+% If the sections are unnumbered, they are invisible to the table of contents unless you use the addcontentsline command.
+\section*{Illustrated and annotated bibliography}
+\addcontentsline{toc}{section}{Illustrated and annotated bibliography}
+
+\subsection*{\bibentry{Mooers2020ShortcutsForFasterImageCreationInPyMOL}}
+\addcontentsline{toc}{subsection}{Mooers2020ShortcutsForFasterImageCreationInPyMOL}
+\input{/Users/blaine/bibNotes/Mooers2020ShortcutsForFasterImageCreationInPyMOL.tex}
+
+\subsection*{\bibentry{Mooers2021TemplatesForWritingPyMOLScripts}}
+\addcontentsline{toc}{subsection}{Mooers2021TemplatesForWritingPyMOLScripts}
+\input{/Users/blaine/bibNotes/Mooers2021TemplatesForWritingPyMOLScripts.tex}
+
+\newpage
+\addcontentsline{toc}{section}{Acronyms}
+\printglossary[type=\acronymtype] % Print the acronym list
+\clearpage
+\addcontentsline{toc}{section}{Glossary}
+\printglossary % Print the main glossary
+\clearpage
+\addcontentsline{toc}{section}{Mathematical Notation}
+\glsaddall[types={notation}] % add all entries, not just those used.
+\printglossary[type=notation, title=Mathematical Notation]
+\addcontentsline{toc}{section}{Literature Cited}
+\bibliography{~/Documents/global}
+\addcontentsline{toc}{section}{Index}
+\printindex
+%\listofauthors  
+\end{document}
