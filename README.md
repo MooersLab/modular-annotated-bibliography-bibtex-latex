@@ -46,10 +46,14 @@ The top of the output PDF looks like the following:
 
 ## Install instructions for Overleaf.com
 
+This is the fastest way to explore the features of this template.
+The files in Modular-Annotated-Bibliography-BibTeX-Overleaf.zip have been configured for running on Overleaf.
+
+
 Download the zip file: Modular-Annotated-Bibliography-BibTeX-Overleaf.zip.
 Upload this zip file into a new project on Overleaf.
-Compile mabib0573.tex. 
-The PDF should be error free.
+The file mabib0573.tex will compile automatically to a PDF. 
+The compile job should be free of warnings.
 
 
 
@@ -73,7 +77,7 @@ Edit the file paths as needed.
 Takes a project ID as the only argument.
 
 Run from the top level of your writing project directory.
-Upon reuse, delete the `cp -R` commands to avoid overwritting exiting files.
+Upon reuse, delete the `cp -R` commands to avoid overwriting existing files.
 
 
 ```bash
