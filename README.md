@@ -44,8 +44,18 @@ It can also be used collaboratively online in Overleaf.
 When exported to a PDF, the org file reads the BibTeX file with formatting set by the *apacannx.bst* file. 
 The top of the output PDF looks like the following:
 
+## Install instructions for Overleaf.com
 
-## One-time directory creation
+Download the zip file: Modular-Annotated-Bibliography-BibTeX-Overleaf.zip.
+Upload this zip file into a new project on Overleaf.
+Compile mabib0573.tex. 
+The PDF should be error free.
+
+
+
+## Local installation instructions
+
+### One-time directory creation
 
 The modular bibliographic notes are stored in folders at the top level in the home directory.
 The global.bib file is stored in `~/Documents`.
@@ -57,7 +67,7 @@ mkdir ~/bibNotes
 mkdir ~/imagesBlaine # Rename 
 ````
 
-## Bash Function to generate subfolder with required files
+### Bash Function to generate subfolder with required files
 
 Edit the file paths as needed.
 Takes a project ID as the only argument.
@@ -93,7 +103,7 @@ cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/imagesB
 ```
 
 
-## Installation
+### Installation
 
 1. git clone this project to your software directory
 2. Copy one of the bash function and paste into your .bashr or .zshrc file.
