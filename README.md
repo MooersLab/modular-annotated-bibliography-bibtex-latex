@@ -52,9 +52,9 @@ The global.bib file is stored in `~/Documents`.
 Adjust the location and 
 
 ```bash
-mkdir ~/gloasaries
+mkdir ~/glossaries
 mkdir ~/bibNotes
-mkdir ~/imagesBlaine
+mkdir ~/imagesBlaine # Rename 
 ````
 
 ## Bash Function to generate subfolder with required files
@@ -83,9 +83,9 @@ cp ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/compile.sh
 cp ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/apacannx.bst ./mabib$1/.
 cp ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/mab0519.bib ./mabib$1/mab$1.bib
 cp ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/mab0519.tex ./mabib$1/mab$1.tex
-cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/glossaries/glossary.tex ~/gloasaries/.
-cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/bibNotes ~/gloasary/.
-cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/notation.tex ~/gloasary/.
+cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/glossaries/glossary.tex ~/glossaries/.
+cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/bibNotes ~/glossary/.
+cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/notation.tex ~/glossary/.
 cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/bibNotes/* ~/bibNotes/.
 cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/imagesBlaine/* ~/imagesBlaine/.
 }
