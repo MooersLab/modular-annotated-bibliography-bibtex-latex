@@ -63,6 +63,7 @@ Edit the file paths as needed.
 Takes a project ID as the only argument.
 
 Run from the top level of your writing project directory.
+Upon reuse, delete the `cp -R` commands to avoid overwritting exiting files.
 
 
 ```bash
