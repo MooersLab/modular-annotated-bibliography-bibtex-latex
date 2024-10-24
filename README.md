@@ -1,21 +1,21 @@
-![Version](https://img.shields.io/static/v1?label=annotated-bibliography-org&message=0.3&color=brightcolor)
+![Version](https://img.shields.io/static/v1?label=modularannotated-bibliography-bibtex-latex&message=0.1&color=brightcolor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
 # Template for making an enhanced annotated and illustrated bibliography with BibTeX in LaTeX
-## Annotated bibliographies on steriods
+## Annotated bibliographies on steroids
 
 ## What is this?
 An annotated bibliography summarizes notes about papers being read during a research project.
 It is one of several methods for working with the knowledge gleaned from reading.
 
 
-This modular form enable reuse of entries in annotated bibliographies for related projects.
+This modular form enables the reuse of entries in annotated bibliographies for related projects.
 
 It has the following enhanced features that the classic annotated bibliography lacks:
 
 - No longer restrained by the annote field in BibTeX.
-- Modular entries for easy resuse
+- Modular entries for easy reuse in related projects
 - Images
 - Tables
 - Equations
@@ -33,7 +33,7 @@ It has the following enhanced features that the classic annotated bibliography l
 
 It is the gold standard for typesetting scientific documents.
 This template can be used on Overleaf.
-It can also be used in a collaborative fashion online in Overleaf.
+It can also be used collaboratively online in Overleaf.
 
 
 ## PDF of Annotated Bibliography
@@ -63,7 +63,7 @@ Run from the top level of your writing project directory.
 
 ```bash
 function mabibtex {
-echo "Create a modular annotated bibliopgraphy subfolder and populate with required files with project number in title."
+echo "Create a modular annotated bibliography subfolder and populate with required files with project number in the title."
 if [ $# -lt 1 ]; then
   echo 1>&2 "$0: not enough arguments"
   echo "Usage1: mabibtex projectIndexNumber"
@@ -85,7 +85,6 @@ cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/notatio
 cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/bibNotes/* ~/bibNotes/.
 cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/imagesBlaine/* ~/imagesBlaine/.
 }
-
 ```
 
 
@@ -106,7 +105,7 @@ cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/imagesB
 
 ## Update history
 
-| Version          |  Changes                                                                                                                           | Date                      |
-|:---------------- -|:--------------------------------------------------------------------------------------------------------------------|:--------------------------| 
-| 0.1               | Initial   version                                                                                                                     | 2024  October 24          |
+| Version           |  Changes                                                                                                            | Date                      |
+|:------------------|:--------------------------------------------------------------------------------------------------------------------|:--------------------------| 
+| 0.1               | Initial   version                                                                                                   | 2024  October 24          |
 
