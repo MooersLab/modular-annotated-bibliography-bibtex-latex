@@ -45,7 +45,7 @@ When exported to a PDF, the org file reads the BibTeX file with formatting set b
 The top of the output PDF looks like the following:
 
 
-## One time directory creation
+## One-time directory creation
 
 The modular bibliographic notes are stored in folders at the top level in the home directory.
 The global.bib file is stored in `~/Documents`.
@@ -100,6 +100,14 @@ cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/imagesB
 4. cd project directory
 3. mabibtex <projectID> to create subfolder 
 
+
+## Usage
+
+1. Create one tex file per reference in the `~/bibNotes folder`. Use the supplies examples as templates. Use the cite key from BibTeX as the name of the bibNote file. Use a blank line between paragraphs. Note that text-wrapping figures is easier than text-wrapping tables. Skip text-wrapping if it is too tedious at this time. Add figures, tables, equations, URLs, citekeys, index macros, acronyms, glossary terms, and math notation as you work.
+2. Use the citekey as the argument of the bibentry macro inside a new subsection heading. This will inject the bibliography entry upon export to PDF.
+3. You can cluster citations by topic and subtopic. You can lower the heading level to subsubsection for the bibilographic entry.
+4. Compile to HTML to enjoy in a web browser. Compile to PDF to edit while traveling or away from the computer.
+5. Compiles with texlive; no extra packages required.
 
 ## Status: 
 Ready to use and enjoy!
