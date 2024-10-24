@@ -3,15 +3,16 @@
 
 
 # Template for making an enhanced annotated and illustrated bibliography with BibTeX in LaTeX
-## Annotated bibliographies on steroids
 
-## What is this?
+## What is this? Annotated bibliography on steroids
 An annotated bibliography summarizes notes about papers being read during a research project.
 It is one of several methods for working with the knowledge gleaned from reading.
 
+![Screenshot 2024-10-24 at 1 40 36 PM](https://github.com/user-attachments/assets/edfd7bd6-85db-40e9-9ad0-53ceb1dc3173)
+
+
 
 This modular form enables the reuse of entries in annotated bibliographies for related projects.
-
 It has the following enhanced features that the classic annotated bibliography lacks:
 
 - No longer restrained by the annote field in BibTeX.
