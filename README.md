@@ -25,10 +25,13 @@ It has the following enhanced features that the classic annotated bibliography l
 - Bibliographic entries can be reordered for subgrouping by category. 
 - Table of contents, hyperlinked to sections
 - Index of terms
-- Bibliography that include papers cited that are outside of those listed in the annotated bibliography.
+- Bibliography includes papers cited outside of those listed in the annotated bibliography.
 - List of acronyms used
-- List of glossay terms used
+- List of glossary terms used
 - List of mathematical notation
+
+![Screenshot 2024-10-24 at 1 41 09 PM](https://github.com/user-attachments/assets/c1fa04fa-7e62-407a-85f3-628f22defc06)
+
 
 ## Why LaTeX
 
@@ -97,6 +100,16 @@ cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/imagesB
 4. cd project directory
 3. mabibtex <projectID> to create subfolder 
 
+
+## Status: 
+Ready to use and enjoy!
+
+## Coming soon
+
+- Variant for biblatex.
+- Variants for org-mde.
+- Variants for typst.
+
 ## Sources of funding
 
 - NIH: R01 CA242845
@@ -108,5 +121,5 @@ cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/imagesB
 
 | Version           |  Changes                                                                                                            | Date                      |
 |:------------------|:--------------------------------------------------------------------------------------------------------------------|:--------------------------| 
-| 0.1               | Initial   version                                                                                                   | 2024  October 24          |
+| 0.1               | Initial commit.                                                                                                     | 2024  October 24          |
 
