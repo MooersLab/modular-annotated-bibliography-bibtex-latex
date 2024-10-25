@@ -60,7 +60,7 @@ The index and glossaries should be populated.
 
 The modular bibliographic notes are stored in folders at the top level in the home directory.
 The global.bib file is stored in `~/Documents`.
-Adjust the location and 
+Adjust the location and run the following:
 
 ```bash
 mkdir ~/glossaries
@@ -112,6 +112,7 @@ cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/imagesB
 3. `mabibtex <projectID>` to create subfolder for the annotated bibliography files.
 
 
+## Use
 1. Create one tex file per reference in the `bibNotes` folder.
     - Use the supplied examples as templates.
     - Use the citekey from BibLaTeX as the name of the bibNote file.
@@ -139,9 +140,9 @@ cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/imagesB
 
 
 ## Status: 
-Ready to use and enjoy on Overleaf.
+Ready to use and enjoy on Overleaf. Works without warnings when using pdflatex, version 2024.
 
-Running locally may require troubleshooting your LaTeX setup.
+Running locally may require troubleshooting your LaTeX setup or your text editor's configuration for LaTeX.
 
 ## Coming soon
 
