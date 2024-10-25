@@ -40,9 +40,9 @@
 \newglossary[nlg]{notation}{not}{ntn}{Notation}
 \makeglossaries
 \setacronymstyle{long-short}
-\loadglsentries{~/glossaries/acronyms}
-\loadglsentries{~/glossaries/glossary}
-\loadglsentries{~/glossaries/notation}
+\loadglsentries{glossaries/acronyms}
+\loadglsentries{glossaries/glossary}
+\loadglsentries{glossaries/notation}
 
 %backmatter
 \bibliographystyle{cell}
@@ -83,7 +83,7 @@
 \affil[3]{Laboratory of Biomolecular Structure and Function, University of Oklahoma Health Sciences Center, Oklahoma City, Oklahoma, United States 73104}
 
 
-\title{An\gls{annotated bibliography}: Molecular graphics}
+\title{An \gls{annotated bibliography}: Molecular graphics}
 
 \usepackage{bibentry}
 \nobibliography*
@@ -98,11 +98,11 @@
 
 \subsection*{\bibentry{Mooers2020ShortcutsForFasterImageCreationInPyMOL}}
 \addcontentsline{toc}{subsection}{Mooers2020ShortcutsForFasterImageCreationInPyMOL}
-\input{/Users/blaine/bibNotes/Mooers2020ShortcutsForFasterImageCreationInPyMOL.tex}
+\input{bibNotes/Mooers2020ShortcutsForFasterImageCreationInPyMOL.tex}
 
 \subsection*{\bibentry{Mooers2021TemplatesForWritingPyMOLScripts}}
 \addcontentsline{toc}{subsection}{Mooers2021TemplatesForWritingPyMOLScripts}
-\input{/Users/blaine/bibNotes/Mooers2021TemplatesForWritingPyMOLScripts.tex}
+\input{bibNotes/Mooers2021TemplatesForWritingPyMOLScripts.tex}
 
 \newpage
 \addcontentsline{toc}{section}{Acronyms}
@@ -115,7 +115,7 @@
 \glsaddall[types={notation}] % add all entries, not just those used.
 \printglossary[type=notation, title=Mathematical Notation]
 \addcontentsline{toc}{section}{Literature Cited}
-\bibliography{~/Documents/mabib0573}
+\bibliography{mabib0573}
 \addcontentsline{toc}{section}{Index}
 \printindex
 %\listofauthors  
