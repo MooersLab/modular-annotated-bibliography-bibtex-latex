@@ -40,11 +40,6 @@ This template can be used on Overleaf.
 It can also be used collaboratively online in Overleaf.
 
 
-## PDF of Annotated Bibliography
-When exported to a PDF, the org file reads the BibTeX file with formatting set by the *apacannx.bst* file. 
-The top of the output PDF looks like the following:
-
-
 ## Drag-and-Drop install instructions for Overleaf.com
 
 This is the fastest way to explore the features of this template.
