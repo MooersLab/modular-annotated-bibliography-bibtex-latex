@@ -40,16 +40,17 @@ This template can be used on Overleaf.
 It can also be used collaboratively online in Overleaf.
 
 
-## Drag-and-Drop install instructions for Overleaf.com
+## Drag-N-Drop install instructions for Overleaf.com
 
 This is the fastest way to explore the features of this template.
-The files in *Modular-Annotated-Bibliography-BibTeX-Overleaf.zip* have been configured for running on Overleaf.
+The files in *overleaf-drag-n-drop.zip* have been configured for running on Overleaf.
 
 1. Download the zip file: Modular-Annotated-Bibliography-BibTeX-Overleaf.zip.
 2. Upload this zip file into a new project on Overleaf.
 
 The file mabib0573.tex will compile automatically to a PDF. 
 The compile job should be free of warnings.
+The index and glossaries should be populated.
 
 
 
@@ -111,20 +112,39 @@ cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/imagesB
 3. `mabibtex <projectID>` to create subfolder for the annotated bibliography files.
 
 
-## Usage
+1. Create one tex file per reference in the `bibNotes` folder.
+    - Use the supplied examples as templates.
+    - Use the citekey from BibLaTeX as the name of the bibNote file.
+    - Use a blank line between paragraphs.
+    - Note that text-wrapping figures is easier than text-wrapping tables.
+    - Skip text-wrapping if it is too tedious.
+    - As you work, add
+      - figures
+      - tables
+      - equations
+      - URLs (including links to videos)
+      - citekeys to references in and out of the annotated bibliography
+      - index macros
+      - acronyms
+      - glossary terms
+      - math notation 
+3. Use the citekey as the argument of the `\bibentry` macro inside a new subsection heading. This will inject the bibliography entry upon export to PDF.
+4. You can cluster citations by topic and subtopic by using the section and subsection macros. You can lower the heading level to the subsubsection level for the bibliographic entry if you need the subsection heading for subgroups.
+5. The colored boxes indicate hyperlinks. Comment out the hypperref package in the preamble to disable.
+6. The `\glsaddall` command is used to print out the entire contents of a glossary file rather than only the entries that are used in the bibNote files.
+7. Compile to HTML to enjoy the output in your web browser.
+8. Compile to PDF to print and edit while traveling or otherwise away from the computer.
+9. Compiles locally with the full installation of texlive.
+10. Compiles in `Textmate.app` with the `Option-R` command.
 
-1. Create one tex file per reference in the `~/bibNotes folder`. Use the supplied examples as templates. Use the cite key from BibTeX as the name of the bibNote file. Use a blank line between paragraphs. Note that text-wrapping figures is easier than text-wrapping tables. Skip text-wrapping if it is too tedious. Add figures, tables, equations, URLs, citekeys, index macros, acronyms, glossary terms, and math notation as you work.
-2. Use the citekey as the argument of the `\bibentry` macro inside a new subsection heading. This will inject the bibliography entry upon export to PDF.
-3. You can cluster citations by topic and subtopic. You can lower the heading level to the subsubsection level for the bibilographic entry.
-4. Compile to HTML to enjoy the output in a web browser. Compile to PDF to edit while traveling or away from the computer.
-5. Compiles with texlive; no extra packages required.
 
 ## Status: 
-Ready to use and enjoy on overleaf or locally!
+Ready to use and enjoy on Overleaf.
+
+Running locally may require troubleshooting your LaTeX setup.
 
 ## Coming soon
 
-- Variant for biblatex.
 - Variants for org-mde.
 - Variants for typst.
 
@@ -141,4 +161,3 @@ Ready to use and enjoy on overleaf or locally!
 |:------------------|:--------------------------------------------------------------------------------------------------------------------|:--------------------------| 
 | 0.1               | Initial commit.                                                                                                     | 2024  October 24          |
 
-# modular-annotated-bibliography-biblatex-latex
