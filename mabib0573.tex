@@ -63,7 +63,7 @@
 \setcounter{tocdepth}{2} % 1 for sections, 2 for subsections, 3 for subsubsections, etc.
 
 % Rename Reference section
-\renewcommand{\refname}{Literature Cite}
+\renewcommand{\refname}{Literature Cited}
 
 % Create a code float environment to enclosed minted environments so that captions can be added to code listings.
 \newenvironment{code}{\captionsetup{type=listing}}{}
@@ -114,8 +114,10 @@
 \addcontentsline{toc}{section}{Mathematical Notation}
 \glsaddall[types={notation}] % add all entries, not just those used.
 \printglossary[type=notation, title=Mathematical Notation]
+\clearpage
 \addcontentsline{toc}{section}{Literature Cited}
 \bibliography{mabib0573}
+\clearpage
 \addcontentsline{toc}{section}{Index}
 \printindex
 %\listofauthors  
