@@ -1,0 +1,9 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'mabib0573.blg'
+[105] biber:340> INFO - === Thu Oct 24, 2024, 21:41:20
+[130] Biber.pm:419> INFO - Reading 'mabib0573.bcf'
+[246] Biber.pm:976> INFO - Using all citekeys in bib section 0
+[273] Biber.pm:4419> INFO - Processing section 0
+[288] Biber.pm:4610> INFO - Looking for bibtex file 'mabib0573.bib' for section 0
+[290] bibtex.pm:1713> INFO - LaTeX decoding ...
+[299] bibtex.pm:1519> INFO - Found BibTeX data source 'mabib0573.bib'

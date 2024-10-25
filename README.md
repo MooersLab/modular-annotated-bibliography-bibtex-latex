@@ -141,3 +141,4 @@ Ready to use and enjoy on overleaf or locally!
 |:------------------|:--------------------------------------------------------------------------------------------------------------------|:--------------------------| 
 | 0.1               | Initial commit.                                                                                                     | 2024  October 24          |
 
+# modular-annotated-bibliography-biblatex-latex
