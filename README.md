@@ -15,20 +15,20 @@ It is one of several methods for working with the knowledge gleaned from reading
 This modular form enables the reuse of entries in annotated bibliographies for related projects.
 It has the following enhanced features that the classic annotated bibliography lacks:
 
-- No longer restrained by the annote field in BibTeX.
-- Modular entries for easy reuse in related projects
-- Images
-- Tables
-- Equations
-- Code blocks
-- Hyperlinks: internal and external
+- No longer restrained by the annote field in BibTeX which removes whitespaces including blank lines between paragraphs.
+- Modular entries for easy reuse in related projects.
+- Images.
+- Tables.
+- Equations.
+- Code blocks.
+- Hyperlinks: internal and external.
 - Bibliographic entries can be reordered for subgrouping by category. 
 - Table of contents, hyperlinked to sections
-- Index of terms
-- Bibliography includes papers cited outside of those listed in the annotated bibliography.
-- List of acronyms used
-- List of glossary terms used
-- List of mathematical notation
+- Index of terms.
+- Bibliography includes papers cited outside those listed in the annotated bibliography.
+- List of acronyms used.
+- List of glossary terms used.
+- List of mathematical notation.
 
 ![Screenshot 2024-10-24 at 1 41 09 PM](https://github.com/user-attachments/assets/c1fa04fa-7e62-407a-85f3-628f22defc06)
 
@@ -44,14 +44,15 @@ It can also be used collaboratively online in Overleaf.
 When exported to a PDF, the org file reads the BibTeX file with formatting set by the *apacannx.bst* file. 
 The top of the output PDF looks like the following:
 
-## Install instructions for Overleaf.com
+
+## Drag-and-Drop install instructions for Overleaf.com
 
 This is the fastest way to explore the features of this template.
-The files in Modular-Annotated-Bibliography-BibTeX-Overleaf.zip have been configured for running on Overleaf.
+The files in *Modular-Annotated-Bibliography-BibTeX-Overleaf.zip* have been configured for running on Overleaf.
 
+1. Download the zip file: Modular-Annotated-Bibliography-BibTeX-Overleaf.zip.
+2. Upload this zip file into a new project on Overleaf.
 
-Download the zip file: Modular-Annotated-Bibliography-BibTeX-Overleaf.zip.
-Upload this zip file into a new project on Overleaf.
 The file mabib0573.tex will compile automatically to a PDF. 
 The compile job should be free of warnings.
 
@@ -106,22 +107,21 @@ cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/imagesB
 }
 ```
 
-
 ### Installation
 
-1. git clone this project to your software directory
-2. Copy one of the bash function and paste into your .bashr or .zshrc file.
-3. source .bashrc
+1. `git clone` this project to your software directory
+2. Copy the bash function and paste into your `.bashrc` or `.zshrc` file.
+3. `source .bashrc` or `.zshrc`
 4. cd project directory
-3. mabibtex <projectID> to create subfolder 
+3. `mabibtex <projectID>` to create subfolder for the annotated bibliography files.
 
 
 ## Usage
 
-1. Create one tex file per reference in the `~/bibNotes folder`. Use the supplies examples as templates. Use the cite key from BibTeX as the name of the bibNote file. Use a blank line between paragraphs. Note that text-wrapping figures is easier than text-wrapping tables. Skip text-wrapping if it is too tedious at this time. Add figures, tables, equations, URLs, citekeys, index macros, acronyms, glossary terms, and math notation as you work.
-2. Use the citekey as the argument of the bibentry macro inside a new subsection heading. This will inject the bibliography entry upon export to PDF.
-3. You can cluster citations by topic and subtopic. You can lower the heading level to subsubsection for the bibilographic entry.
-4. Compile to HTML to enjoy in a web browser. Compile to PDF to edit while traveling or away from the computer.
+1. Create one tex file per reference in the `~/bibNotes folder`. Use the supplied examples as templates. Use the cite key from BibTeX as the name of the bibNote file. Use a blank line between paragraphs. Note that text-wrapping figures is easier than text-wrapping tables. Skip text-wrapping if it is too tedious. Add figures, tables, equations, URLs, citekeys, index macros, acronyms, glossary terms, and math notation as you work.
+2. Use the citekey as the argument of the `\bibentry` macro inside a new subsection heading. This will inject the bibliography entry upon export to PDF.
+3. You can cluster citations by topic and subtopic. You can lower the heading level to the subsubsection level for the bibilographic entry.
+4. Compile to HTML to enjoy the output in a web browser. Compile to PDF to edit while traveling or away from the computer.
 5. Compiles with texlive; no extra packages required.
 
 ## Status: 
