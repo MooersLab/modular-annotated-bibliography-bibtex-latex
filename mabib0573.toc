@@ -1,8 +1,0 @@
-\contentsline {section}{Illustrated and annotated bibliography}{1}{section*.2}%
-\contentsline {subsection}{Mooers2020ShortcutsForFasterImageCreationInPyMOL}{1}{section*.3}%
-\contentsline {subsection}{Mooers2021TemplatesForWritingPyMOLScripts}{2}{section*.6}%
-\contentsline {section}{Acronyms}{4}{table.caption.11}%
-\contentsline {section}{Glossary}{5}{section*.13}%
-\contentsline {section}{Mathematical Notation}{6}{section*.15}%
-\contentsline {section}{Literature Cited}{7}{section*.17}%
-\contentsline {section}{Index}{7}{section*.17}%
