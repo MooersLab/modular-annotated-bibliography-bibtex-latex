@@ -45,11 +45,7 @@
 \loadglsentries{glossaries/notation}
 
 %backmatter
-
-\usepackage[backend=biber, style=apa]{biblatex}
-\addbibresource{mabib0573.bib}
-
-
+\bibliographystyle{cell}
 \makeindex
 % The following command produces a single column author index.
 \RequirePackage{authorindex}
@@ -100,11 +96,11 @@
 \section*{Illustrated and annotated bibliography}
 \addcontentsline{toc}{section}{Illustrated and annotated bibliography}
 
-\subsection*{\fullcite{Mooers2020ShortcutsForFasterImageCreationInPyMOL}}
+\subsection*{\bibentry{Mooers2020ShortcutsForFasterImageCreationInPyMOL}}
 \addcontentsline{toc}{subsection}{Mooers2020ShortcutsForFasterImageCreationInPyMOL}
 \input{bibNotes/Mooers2020ShortcutsForFasterImageCreationInPyMOL.tex}
 
-\subsection*{\fullcite{Mooers2021TemplatesForWritingPyMOLScripts}}
+\subsection*{\bibentry{Mooers2021TemplatesForWritingPyMOLScripts}}
 \addcontentsline{toc}{subsection}{Mooers2021TemplatesForWritingPyMOLScripts}
 \input{bibNotes/Mooers2021TemplatesForWritingPyMOLScripts.tex}
 
@@ -119,8 +115,7 @@
 \glsaddall[types={notation}] % add all entries, not just those used.
 \printglossary[type=notation, title=Mathematical Notation]
 \addcontentsline{toc}{section}{Literature Cited}
-\nocite{*}
-\printbibliography
+\bibliography{mabib0573}
 \addcontentsline{toc}{section}{Index}
 \printindex
 %\listofauthors  
