@@ -147,7 +147,6 @@ Running locally may require troubleshooting your LaTeX setup or your text editor
 ## Coming soon
 
 - Variants for org-mde.
-- Variants for typst.
 
 ## Sources of funding
 
