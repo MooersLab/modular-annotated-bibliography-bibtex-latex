@@ -15,7 +15,7 @@ It is one of several methods for working with the knowledge gleaned from reading
 This modular form enables the reuse of entries in annotated bibliographies for related projects.
 It has the following enhanced features that the classic annotated bibliography lacks:
 
-- No longer restrained by the annote field in BibTeX which removes whitespaces including blank lines between paragraphs.
+- No longer restrained by the `annote` field in BibTeX, which removes whitespaces including blank lines between paragraphs.
 - Modular entries for easy reuse in related projects.
 - Images.
 - Tables.
