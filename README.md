@@ -15,7 +15,7 @@ It is one of several methods for working with the knowledge gleaned from reading
 This modular form enables the reuse of entries in annotated bibliographies for related projects.
 It has the following enhanced features that the classic annotated bibliography lacks:
 
-- No longer restrained by the `annote` field in BibTeX, which removes whitespaces including blank lines between paragraphs.
+- No longer restrained by the `annote` field in BibTeX, which removes whitespaces, including blank lines between paragraphs.
 - Modular entries for easy reuse in related projects.
 - Images.
 - Tables.
@@ -43,7 +43,7 @@ It can also be used collaboratively online in Overleaf.
 ## Drag-N-Drop install instructions for Overleaf.com
 
 This is the fastest way to explore the features of this template.
-The files in *overleaf-drag-n-drop.zip* have been configured for running on Overleaf.
+The files in *overleaf-drag-n-drop.zip* have been configured to run on Overleaf.
 
 1. Download the zip file: Modular-Annotated-Bibliography-BibTeX-Overleaf.zip.
 2. Upload this zip file into a new project on Overleaf.
@@ -130,13 +130,13 @@ cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/imagesB
       - glossary terms
       - math notation 
 3. Use the citekey as the argument of the `\bibentry` macro inside a new subsection heading. This will inject the bibliography entry upon export to PDF.
-4. You can cluster citations by topic and subtopic by using the section and subsection macros. You can lower the heading level to the subsubsection level for the bibliographic entry if you need the subsection heading for subgroups.
-5. The colored boxes indicate hyperlinks. Comment out the hypperref package in the preamble to disable.
-6. The `\glsaddall` command is used to print out the entire contents of a glossary file rather than only the entries that are used in the bibNote files.
+4. Using the section and subsection macros, you can cluster citations by topic and subtopic. You can lower the heading level to the subsubsection level for the bibliographic entry if you need the subsection heading for subgroups.
+5. The colored boxes indicate hyperlinks. Comment out the *hypperref* package in the preamble to disable.
+6. The `\glsaddall` command prints out the entire contents of a glossary file rather than only the entries used in the bibNote files.
 7. Compile to HTML to enjoy the output in your web browser.
-8. Compile to PDF to print and edit while traveling or otherwise away from the computer.
-9. Compiles locally with the full installation of texlive.
-10. Compiles in `Textmate.app` with the `Option-R` command.
+8. Compile to PDF to print and edit while traveling or away from the computer.
+9. Compiles locally with the full installation of *texlive*.
+10. Compiles in *Textmate.app* with the `Option-R` command or command-B in Sublime Text or `C-c C-a` in Emacs.
 
 
 ## Status: 
