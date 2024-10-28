@@ -168,5 +168,5 @@ Running locally may require troubleshooting your LaTeX setup or your text editor
 | Version           |  Changes                                                                                                            | Date                      |
 |:------------------|:--------------------------------------------------------------------------------------------------------------------|:--------------------------| 
 | 0.1               | Initial commit.                                                                                                     | 2024  October 24          |
-| 0.2               | Edited folder names in bash script to be consistent with the analogous Typst project.                                | 2024  October 27          |
+| 0.2               | Edited folder names in bash script to be consistent with the analogous Typst project.                               | 2024  October 27          |
 
