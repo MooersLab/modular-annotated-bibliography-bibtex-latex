@@ -72,29 +72,36 @@ mkdir ~/imagesBlaine # Rename
 
 Edit the file paths as needed.
 Takes a project ID as the only argument.
+Assumes that the following folders are in you home directory:
+
+-  bibNotes
+-  glossaries
+-  imagesBlaine
+
+Customize the name of the last folder.
 
 Run from the top level of your writing project directory.
 Upon reuse, delete the `cp -R` commands to avoid overwriting existing files.
 
 
 ```bash
-function mabibtex {
-echo "Create a modular annotated bibliography subfolder and populate with required files with project number in the title."
+function mabtex {
+echo "Create a modular annotated bibliography (mab) subfolder and populate with required files with project number in the title."
 if [ $# -lt 1 ]; then
   echo 1>&2 "$0: not enough arguments"
   echo "Usage1: mabibtex projectIndexNumber"
   return 2
 elif [ $# -gt 1 ]; then
   echo 1>&2 "$0: too many projectIndexNumber"
-  echo "Usage1: mabibtex projectIndexNumber"
+  echo "Usage1: mabtex projectIndexNumber"
   return 2
 fi
 projectID="$1"
-mkdir mabib$1
-cp ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/compile.sh ./mabib$1/.
-cp ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/apacannx.bst ./mabib$1/.
-cp ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/mab0519.bib ./mabib$1/mab$1.bib
-cp ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/mab0519.tex ./mabib$1/mab$1.tex
+mkdir mab$1
+cp ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/compile.sh ./mab$1/.
+cp ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/apacannx.bst ./mab$1/.
+cp ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/mab0519.bib ./mab$1/mab$1.bib
+cp ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/mab0519.tex ./mab$1/mab$1.tex
 cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/glossaries/glossary.tex ~/glossaries/.
 cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/bibNotes ~/glossary/.
 cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/notation.tex ~/glossary/.
@@ -109,7 +116,7 @@ cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/imagesB
 2. Copy the bash function and paste into your `.bashrc` or `.zshrc` file.
 3. `source .bashrc` or `.zshrc`
 4. cd project directory
-3. `mabibtex <projectID>` to create subfolder for the annotated bibliography files.
+3. `mabtex <projectID>` to create subfolder for the annotated bibliography files.
 
 
 ## Use
@@ -128,10 +135,11 @@ cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/imagesB
       - index macros
       - acronyms
       - glossary terms
-      - math notation 
+      - math notation
+      
 3. Use the citekey as the argument of the `\bibentry` macro inside a new subsection heading. This will inject the bibliography entry upon export to PDF.
 4. Using the section and subsection macros, you can cluster citations by topic and subtopic. You can lower the heading level to the subsubsection level for the bibliographic entry if you need the subsection heading for subgroups.
-5. The colored boxes indicate hyperlinks. Comment out the *hypperref* package in the preamble to disable.
+5. The colored boxes indicate hyperlinks. Comment out the *hyperref* package in the preamble to disable.
 6. The `\glsaddall` command prints out the entire contents of a glossary file rather than only the entries used in the bibNote files.
 7. Compile to HTML to enjoy the output in your web browser.
 8. Compile to PDF to print and edit while traveling or away from the computer.
@@ -160,4 +168,5 @@ Running locally may require troubleshooting your LaTeX setup or your text editor
 | Version           |  Changes                                                                                                            | Date                      |
 |:------------------|:--------------------------------------------------------------------------------------------------------------------|:--------------------------| 
 | 0.1               | Initial commit.                                                                                                     | 2024  October 24          |
+| 0.2               | Edited folder names in bash script to be consistent with the analogous Typst project.                                | 2024  October 27          |
 
