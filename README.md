@@ -98,15 +98,15 @@ elif [ $# -gt 1 ]; then
 fi
 projectID="$1"
 mkdir mab$1
-cp ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/compile.sh ./mab$1/.
-cp ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/apacannx.bst ./mab$1/.
-cp ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/mab0519.bib ./mab$1/mab$1.bib
-cp ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/mab0519.tex ./mab$1/mab$1.tex
-cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/glossaries/glossary.tex ~/glossaries/.
-cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/bibNotes ~/glossary/.
-cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/notation.tex ~/glossary/.
-cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/bibNotes/* ~/bibNotes/.
-cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-latex/imagesBlaine/* ~/imagesBlaine/.
+cp ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-bibtex-latex/compile.sh ./mab$1/.
+cp ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-bibtex-latex/apacannx.bst ./mab$1/.
+cp ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-bibtex-latex/mab0519.bib ./mab$1/mab$1.bib
+cp ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-vlatex/mab0519.tex ./mab$1/mab$1.tex
+cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-bibtex-latex/glossaries/glossary.tex ~/glossaries/.
+cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-lbibtex-atex/bibNotes ~/glossary/.
+cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-bibtex-latex/notation.tex ~/glossary/.
+cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-bibtex-latex/bibNotes/* ~/bibNotes/.
+cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-bibtex-latex/imagesBlaine/* ~/imagesBlaine/.
 }
 ```
 
