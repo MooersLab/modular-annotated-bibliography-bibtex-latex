@@ -2,21 +2,23 @@ import os
 import sys
 
 """
-Purpose: read a list of citekeys as strings from the file "papersAboutCoding.tex", reformat for use in main.tex, and write them to "citations.tex".
-The approach supports the customizing the order of the entries in the annotated bibliography.
-This list of citekeys are be ordered by categories instead of being in alphabetical order.
+Purpose: read a list of citekeys as strings from the file "papersAboutCoding.tex", 
+reformat for use in main.tex, and write them to "citations.tex".
+The approach supports customizing the order of the entries in the annotated bibliography.
+This list of citekeys can be ordered by categories instead of alphabetical order.
 
+The script is run from the command line and takes two arguments: 
+the filename of the list of citekeys and the output filename.
 
-The script is run from the command line and takes two arguments: the filename of the list of citekeys and the output filename.
-This script contains two functions that are called from the main section below.
-
+This script contains two functions that are called from the if __main__ section below.
 The first function format_citations() takes a list of strings from an itemized list in LaTeX and 
 formats each string to enable the inclusion of the associated bibliographic entry in the subsection heading 
 and the bibNote in the annotation below.
 
 This script includes error handling to check if the file papersAboutCoding.tex exists. 
 If the file is not found, it prints an error message and proceeds with an empty list of strings.
-This script includes the create_bib_notes_file function, which creates a new file in the ./bibNotes (or ~/bibNotes) directory 
+This script includes the create_bib_notes_file function, 
+which creates a new file in the ./bibNotes (or ~/bibNotes) directory, 
 if it does not already exist.
 
 This script takes the input and output filenames as command line arguments. 
@@ -34,7 +36,7 @@ Oklahoma City, OK
 """
 
 def format_citations(strings):
-    """Assumes that the citekeys (the strings) are in an itemized list without the flanking begin and end statements. 
+    """Assume that the citekeys (the strings) are in an itemized list without the flanking begin and end statements. 
     The leading \\item and whitespace are stripped when the strings are read from the file to .
     
     The written subsection heading will be unnumbered to reduce clutter.
