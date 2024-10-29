@@ -148,8 +148,8 @@ cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-bibtex-latex/
 
 ## Format re-ordered list of citekeys
 
-The script `texList2typList.py` depends only on standard modules.
-It prepares a list of citekeys for inclusion in the body of the main.tex file (labeled mabib0573.tex here).
+The script `texList2inputs.py` depends only on standard modules.
+It prepares a list of citekeys for inclusion in the body of the master main.tex file (labeled mabib0573.tex here).
 This eases reordering long lists of entries.
 Sample input `papersAboutCoding.tex` and output `citations.tex` files are provided.
 
@@ -160,7 +160,7 @@ Running locally may require troubleshooting your LaTeX setup or your text editor
 
 ## Coming soon
 
-- Variants for org-mde.
+- Variants for org-mode.
 
 ## Sources of funding
 
