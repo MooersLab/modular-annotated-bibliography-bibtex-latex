@@ -34,9 +34,10 @@ Oklahoma City, OK
 """
 
 def format_citations(strings):
-    """Assumes that the strings are in a markdown list. 
-    The leading \\item and whitespace are stripped.
-    The subsection heading is unnumbered to reduce clutter.
+    """Assumes that the citekeys (the strings) are in an itemized list without the flanking begin and end statements. 
+    The leading \\item and whitespace are stripped when the strings are read from the file to .
+    
+    The written subsection heading will be unnumbered to reduce clutter.
     Because the subsection is unnumbered, it is ignored for inclusion in the table of contents by default.
     We have to add it via the addconents macro on the line below the headline.
     The corresponding annotation file is imported from the bibNotes folder in the third line.
@@ -45,7 +46,6 @@ def format_citations(strings):
     for s in strings:
         ss = s.lstrip("\\item ")
         formatted_string = f'\\subsection*{{\\bibentry{{{ss}}}}}\n\\addcontentsline{{toc}}{{subsection}}{{{ss}}}\n\\input{{{ss}}}.tex}}\n\n'
-
         formatted_strings.append(formatted_string)
     return formatted_strings
 
@@ -64,6 +64,7 @@ def create_bib_notes_file(string):
     if not os.path.exists(file_path):
         with open(file_path, 'w') as file:
             file.write(f'%{string},tex\n\n')
+
 
 # *********************** __main__ **************************
 if __name__ == "__main__":
