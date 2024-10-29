@@ -175,4 +175,4 @@ Running locally may require troubleshooting your LaTeX setup or your text editor
 |:------------------|:--------------------------------------------------------------------------------------------------------------------|:--------------------------| 
 | 0.1               | Initial commit.                                                                                                                       | 2024  October 24          |
 | 0.2               | Edited folder names in bash script to be consistent with the analogous Typst project.       | 2024  October 27          |
-| 0.3              | Added working version of texList2typList.py.                                                                         | 2024  October 29          |
+| 0.3              | Added working version of texList2inputs.py.                                                                         | 2024  October 29          |
