@@ -146,6 +146,12 @@ cp -R ~/6112MooersLabGitHubLabRepos/modular-annotated-bibliography-bibtex-latex/
 9. Compiles locally with the full installation of *texlive*.
 10. Compiles in *Textmate.app* with the `Option-R` command or command-B in Sublime Text or `C-c C-a` in Emacs.
 
+## Format re-ordered list of citekeys
+
+The script `texList2typList.py` depends only on standard modules.
+It prepares a list of citekeys for inclusion in the body of the main.tex file (labeled mabib0573.tex here).
+This eases reordering long lists of entries.
+Sample input `papersAboutCoding.tex` and output `citations.tex` files are provided.
 
 ## Status: 
 Ready to use and enjoy on Overleaf. Works without warnings when using pdflatex, version 2024.
@@ -165,8 +171,8 @@ Running locally may require troubleshooting your LaTeX setup or your text editor
 
 ## Update history
 
-| Version           |  Changes                                                                                                            | Date                      |
+| Version           |  Changes                                                                                                                          | Date                      |
 |:------------------|:--------------------------------------------------------------------------------------------------------------------|:--------------------------| 
-| 0.1               | Initial commit.                                                                                                     | 2024  October 24          |
-| 0.2               | Edited folder names in bash script to be consistent with the analogous Typst project.                               | 2024  October 27          |
-
+| 0.1               | Initial commit.                                                                                                                       | 2024  October 24          |
+| 0.2               | Edited folder names in bash script to be consistent with the analogous Typst project.       | 2024  October 27          |
+| 0.3              | Added working version of texList2typList.py.                                                                         | 2024  October 29          |
